@@ -1,18 +1,18 @@
 import pyinputplus as pyip
 
 class BMI():
-    def __init__(self, name:str, height:float, weight:float) -> None:
+    def __init__(self, name: str, height: float, weight: float):
         super().__init__()
         self.name = name
         self.height = height
         self.weight = weight
 
-    def __repr__(self) -> str:
-        return f"\n{self.name0}您好"
+    def __repr__(self):
+        return f'\n{self.name}您好:'
     
     @property
-    def bmi(self) -> float:
-        return self.weight / (self.height/100) ** 2
+    def bmi(self)->float:
+        return self.weight / (self.height / 100) ** 2
     
     def status(self) -> str:
         if self.bmi < 18.5:
